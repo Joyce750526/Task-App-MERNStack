@@ -7,7 +7,7 @@ const port = 4000;
 
 // Need to fix MongoDB Issue!!
 const MongoDBAccess =
-  "mongodb+srv://chaoying750526:<password>@cluster0.f8lkifx.mongodb.net/";
+  "mongodb+srv://chaoying750526:<Joyce750526>@cluster0.f8lkifx.mongodb.net/";
 mongoose
   .connect(MongoDBAccess, { useNewUrlParser: true })
   .then(() => {
@@ -22,5 +22,5 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send("hello");    
+  res.send("hello");
 });
